@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="print" AfterTargets="Build">
+    <!--<Message Importance="high" Text="EnableNETAnalyzers '$(EnableNETAnalyzers)'" />
+    <Message Importance="high" Text="TreatWarningsAsErrors '$(TreatWarningsAsErrors)'" />
+    <Message Importance="high" Text="CodeAnalysisTreatWarningsAsErrors '$(CodeAnalysisTreatWarningsAsErrors)'" />
+    <Message Importance="high" Text="EnforceCodeStyleInBuild '$(EnforceCodeStyleInBuild)'" />
+    <Message Importance="high" Text="AnalysisMode '$(AnalysisMode)'" />-->
+    <Message Importance="high" Text="AnalysisLevel '$(AnalysisLevel)'" />
+    <Message Importance="high" Text="AnalysisLevelDesign '$(AnalysisLevelDesign)'" />
+  </Target>
+</Project>

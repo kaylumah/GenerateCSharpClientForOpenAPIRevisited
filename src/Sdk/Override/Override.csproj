@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <!--<ImplicitUsings>enable</ImplicitUsings>-->
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<OpenApiReference Include="..\..\Api\Demo\bin\Debug\net7.0\Demo.json" CodeGenerator="NSwagCSharp" Namespace="MyNamespace" ClassName="MyClient" Link="OpenAPIs\Demo.json" />-->
+    <!--<OpenApiReference Include="..\..\Api\Demo\bin\Debug\net7.0\Demo.json" CodeGenerator="NSwagCSharp" Options="/Namespace:MyNamespace1" ClassName="MyClient" Link="OpenAPIs\Demo.json" />-->
+    <OpenApiReference Include="..\..\Api\Demo\bin\Debug\net7.0\Demo.json" CodeGenerator="NSwagCSharp" Options="/JsonLibrary:SystemTextJson /ExceptionClass:DemoApiException" ClassName="MyClient" Link="OpenAPIs\Demo.json" />
+    <!--<OpenApiReference Include="..\..\Api\Demo\bin\Debug\net7.0\Demo.json" CodeGenerator="NSwagCSharp" Options="/Namespace:MyNamspace /JsonLibrary:SystemTextJson /ExceptionClass:DemoApiException" ClassName="MyClient" Link="OpenAPIs\Demo.json" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.18.2" />
+  </ItemGroup>
+
+</Project>

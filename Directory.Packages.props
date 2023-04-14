@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- https://learn.microsoft.com/en-gb/nuget/consume-packages/central-package-management#enabling-central-package-management -->
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Extensions.ApiDescription.Client" Version="3.0.0" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageVersion Include="NSwag.ApiDescription.Client" Version="13.0.5" />
+  </ItemGroup>
+</Project>

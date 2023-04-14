@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{575B1B46-75F6-4DFC-B90C-415014F08FC0}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		README.md = README.md
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{45D5E76E-7CC0-4D7A-87D7-4555CCB80F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{C9CC29AA-AB94-4BB5-8545-B10387DD3682}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sdk", "Sdk", "{BDDDEFCF-4F83-4B18-B39F-19D583A2B052}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Msbuild", "src\Sdk\Msbuild\Msbuild.csproj", "{82CA67CF-270D-4C29-90DC-588DF29D67DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectedService", "src\Sdk\ConnectedService\ConnectedService.csproj", "{F7616890-D6FF-4AF9-9854-7FE9A06883A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "src\Api\Demo\Demo.csproj", "{6BE73B81-D963-4A0D-B435-8B22F395558C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manual", "src\Sdk\Manual\Manual.csproj", "{1BC5534E-6BA4-4098-BED9-223A62399078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Override", "src\Sdk\Override\Override.csproj", "{D8C671D7-44FB-476D-85E2-02819287FF36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82CA67CF-270D-4C29-90DC-588DF29D67DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82CA67CF-270D-4C29-90DC-588DF29D67DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82CA67CF-270D-4C29-90DC-588DF29D67DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82CA67CF-270D-4C29-90DC-588DF29D67DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7616890-D6FF-4AF9-9854-7FE9A06883A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7616890-D6FF-4AF9-9854-7FE9A06883A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7616890-D6FF-4AF9-9854-7FE9A06883A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7616890-D6FF-4AF9-9854-7FE9A06883A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE73B81-D963-4A0D-B435-8B22F395558C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE73B81-D963-4A0D-B435-8B22F395558C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE73B81-D963-4A0D-B435-8B22F395558C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE73B81-D963-4A0D-B435-8B22F395558C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC5534E-6BA4-4098-BED9-223A62399078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC5534E-6BA4-4098-BED9-223A62399078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC5534E-6BA4-4098-BED9-223A62399078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC5534E-6BA4-4098-BED9-223A62399078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C671D7-44FB-476D-85E2-02819287FF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C671D7-44FB-476D-85E2-02819287FF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C671D7-44FB-476D-85E2-02819287FF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C671D7-44FB-476D-85E2-02819287FF36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9CC29AA-AB94-4BB5-8545-B10387DD3682} = {45D5E76E-7CC0-4D7A-87D7-4555CCB80F15}
+		{BDDDEFCF-4F83-4B18-B39F-19D583A2B052} = {45D5E76E-7CC0-4D7A-87D7-4555CCB80F15}
+		{82CA67CF-270D-4C29-90DC-588DF29D67DD} = {BDDDEFCF-4F83-4B18-B39F-19D583A2B052}
+		{F7616890-D6FF-4AF9-9854-7FE9A06883A8} = {BDDDEFCF-4F83-4B18-B39F-19D583A2B052}
+		{6BE73B81-D963-4A0D-B435-8B22F395558C} = {C9CC29AA-AB94-4BB5-8545-B10387DD3682}
+		{1BC5534E-6BA4-4098-BED9-223A62399078} = {BDDDEFCF-4F83-4B18-B39F-19D583A2B052}
+		{D8C671D7-44FB-476D-85E2-02819287FF36} = {BDDDEFCF-4F83-4B18-B39F-19D583A2B052}
+	EndGlobalSection
+EndGlobal

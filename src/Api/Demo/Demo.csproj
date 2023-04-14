@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <Target Name="Generate OpenAPI Specification Document" AfterTargets="Build">
+    <PropertyGroup>
+      <OpenApiDocumentName>v1</OpenApiDocumentName>
+      <ApiDll>$(OutputPath)$(AssemblyName).dll</ApiDll>
+      <OutputApiDocument>$(OutputPath)$(AssemblyName).json</OutputApiDocument>
+    </PropertyGroup>
+    <Exec Command="dotnet swagger tofile --output $(OutputApiDocument) $(ApiDll) $(OpenApiDocumentName)" ContinueOnError="true" />
+  </Target>
+
+</Project>
